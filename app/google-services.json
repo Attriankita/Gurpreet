@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "931489853525",
+    "project_id": "wink-1520622703476"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931489853525:android:81ec0ec7c0464831",
+        "android_client_info": {
+          "package_name": "com.project.wink"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "931489853525-klfd4mo7hfl71nec4nvjqq6jrbveafp3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAlUcf8wh1iGyZMkl7i6-JLfp3qkUtM8fE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

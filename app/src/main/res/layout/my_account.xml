@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+
+    <TextView
+        android:id="@+id/userFullName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="27dp"
+        android:text="User's Full Name"
+        android:textColor="@color/black"
+        android:textSize="25dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/userFullName"
+      >
+
+    <Button
+        android:id="@+id/buttonProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userFullName"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:drawableLeft="@drawable/ic_face_profile"
+        android:text="My Profile"
+        android:layout_marginTop="30dp"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"/>
+
+        <android.support.v4.widget.Space
+            android:layout_height="1dp"
+            android:layout_width="match_parent"
+            android:background="#c0c0c0"/>
+        <Button
+        android:id="@+id/buttonPaymentDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/buttonProfile"
+        android:layout_centerVertical="true"
+        android:drawableLeft="@drawable/ic_credit_card"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Payment Details"
+        android:gravity="left|center_vertical"
+        android:drawablePadding="10dp"
+        android:background="@color/white"
+        android:textColor="@color/black"
+        android:paddingLeft="20dp"
+        />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Wink</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="back4app_server_url">https://parseapi.back4app.com/</string>
+    <string name="type_to_search">Type to Search</string>
+    <!-- Change the following strings as required -->
+    <string name="back4app_app_id">H5dTmcTIKi6jxdHeaMKx9n6Vp5ACeMICTKDV9okY</string>
+    <string name="back4app_client_key">NAXYrOMWtHbEryigGDGLyiJsfRfnXupNflQIoyaT</string>
+    <string name="title_activity_home">HomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="title_activity_home_page">Wink</string>
+    <string name="title_activity_home_navigation">HomeNavigationActivity</string>
+
+    <item type="id" name="govt_pdf"/>
+    <item type="id" name="resume_pdf"/>
+    <item type="id" name="certificate_pdf"/>
+</resources>

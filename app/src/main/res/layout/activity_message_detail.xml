@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.project.wink.MessageDetailActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:fitsSystemWindows="true"
+        android:background="@color/white"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="?attr/actionBarSize"
+            android:orientation="vertical"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:background="@color/white"
+            >
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/input_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:singleLine="true"/>
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/input_phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/input_layout_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/input_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--  City Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView android:id="@+id/input_subject"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:inputType="textCapWords"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  State Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView android:id="@+id/input_message"
+                    android:textColor="@color/black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Country Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp">
+                <TextView android:id="@+id/input_date"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Postal Code Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/layout_time">
+                <TextView android:id="@+id/input_time"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Postal Code Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/layout_feedbackTxt">
+                <TextView android:id="@+id/feedbackTxt"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:hint="" />
+            </android.support.design.widget.TextInputLayout>
+
+            <!--  Payment Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/layout_payment">
+                <TextView android:id="@+id/input_payment"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:visibility="gone"/>
+            </android.support.design.widget.TextInputLayout>
+            <!--  Countdown Code Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/layout_countdown"
+                android:background="@color/main_color"
+                >
+                <TextView android:id="@+id/countdown"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:textSize="16dp"
+                    android:visibility="gone"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+            <!--  Countdown Code Label -->
+            <android.support.design.widget.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/layout_timer"
+                android:background="@color/main_color"
+                >
+                <TextView android:id="@+id/timer"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/white"
+                    android:layout_height="wrap_content"
+                    android:hint=""
+                    android:textSize="16dp"
+                    android:visibility="gone"/>
+            </android.support.design.widget.TextInputLayout>
+
+            <com.parse.ParseImageView
+                android:id="@+id/img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/layout_time"
+                android:layout_gravity="center"
+                android:minHeight="0dp"
+                android:padding="0dp"/>
+
+            <EditText
+                android:id="@+id/input_feedback"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lines="5"
+                android:gravity="top|left"
+                android:inputType="textMultiLine"
+                android:scrollHorizontally="false"
+                android:hint="Write your feedback here"
+                android:textColor="@color/black"
+                android:visibility="gone"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btn_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+                    android:layout_marginTop="40dp"
+                    android:text="Send Feedback"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"/>
+                <Button
+                    android:id="@+id/btn_start"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+                    android:layout_marginTop="40dp"
+                    android:text="Start"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_stop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+                    android:layout_marginTop="40dp"
+                    android:text="Done"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_cancel_service"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+                    android:layout_marginTop="40dp"
+                    android:text="Cancel Service"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+                    android:layout_marginTop="40dp"
+                    android:text="Cancel"
+                    android:textColor="@android:color/white"
+                    android:visibility="gone"/>
+
+                <Button
+                    android:id="@+id/btn_reject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+
+                    android:layout_marginTop="40dp"
+                    android:text="Reject"
+                    android:textColor="@android:color/white" />
+
+                <Button
+                    android:id="@+id/btn_accept"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img"
+
+                    android:layout_marginTop="40dp"
+                    android:text="Accept"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="100dp" />
+        </LinearLayout>
+    </ScrollView>
+</android.support.constraint.ConstraintLayout>
